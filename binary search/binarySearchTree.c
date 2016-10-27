@@ -188,15 +188,17 @@ int main(int argc, char const *argv[])
 {
 
 	node* root=NULL;
+	int n;
+	scanf("%d\n", &n);
 	int i,d;
-	for(i=0;i<8;i++)
+	for(i=0;i<n;i++)
 	{
 		scanf("%d",&d);
 		root=addnode(root,d);
 	}
-	printT(root);
-	printf("Number of nodes in tree is %d\n",numOFNodes(root));
-	printf("Number of leaves in tree is %d\n",numOFLeaves(root));
-	printf("Max node is %d\n",findMax(root)->data );
+	// printT(root);
+	// printf("Number of nodes in tree is %d\n",numOFNodes(root));
+	printf("%d\n",numOFLeaves(root));
+	// printf("Max node is %d\n",findMax(root)->data );
 	return 0;
 }
