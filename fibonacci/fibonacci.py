@@ -4,12 +4,18 @@ def fibonacci(number):
     [1]
     >>> fibonacci(2)
     [1, 1]
+    >>> fibonacci(5)
+    [1, 1, 2, 3, 5]
     """
 
-    if number == 1:
-        return [1]
-    if number == 2:
-        return [1, 1]
+    result = []
+    current, nxt = 0, 1
+
+    while True:
+        current, nxt = nxt, nxt + current
+        result.append(current)
+        if len(result) == number:
+            return result
 
 
 if __name__ == "__main__":
