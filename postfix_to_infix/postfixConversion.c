@@ -34,7 +34,7 @@ node* create(int c)  // function create a newnode
 	return newnode;
 }
 
-void printS()  // this is a utility function to print stack at a point, use this function to detect error
+void printS()  // this is a function to print stack at a point, use this function to detect error
 {
 	int i;
 	printf("stack at this point is : ");
@@ -85,7 +85,6 @@ int main()
 			S[++top].PTN=newnode;
 		}
 	}
-	printf("Our Infix exprn is \n");
 	printT(S[0].PTN);
 	printf("\n");
 	return 0;
