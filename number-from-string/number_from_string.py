@@ -4,14 +4,15 @@ def get_number_from_string(string):
     1
     >>> get_number_from_string('This is number: 9')
     9
+    >>> get_number_from_string('$100 000 000')
+    100000000
+    >>> get_number_from_string('hell5o wor6ld')
+    56
     """
 
-    result = ''
-    for each in string:
-        if each.isdigit():
-            result += each
+    result = int(''.join(filter(lambda x: x.isdigit(), string)))
 
-    return int(result)
+    return result
 
 
 if __name__ == "__main__":
