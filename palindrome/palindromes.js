@@ -11,23 +11,24 @@ Complexity is in O(n)
 
 function palindrome(str) {
 
+  //We ignore punctuation and spacing.
   str = str.replace(/[^a-zA-Z0-9]/g,"");
+  //We ignore case
   str = str.toLowerCase();
 
   var i = 0;
   var j = str.length - 1;
 
+  //Now let's compare characters between the beginning and the end
+  while(i < (str.length - 1) / 2 && j > (str.length - 1) / 2) {
+    if(str[i] !== str[j])
+    {
+      return false;
+    }
 
-  while(i < (str.length - 1) / 2 && j > (str.length - 1) / 2)
-        {
-          if(str[i] !== str[j])
-            {
-              return false;
-            }
-
-            i++;
-            j--;
-        }
+    i++;
+    j--;
+  }
 
   return true;
 }
