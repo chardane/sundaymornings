@@ -7,7 +7,6 @@
  */
 var deflateString = function(input) {
   var output;
-  //var space = /\s*/;
   // Strip non-alpha characters & merge into one string.
   output = input.replace(/[^\w]|_/g, "");
   // Convert the whole thing to lower case.
