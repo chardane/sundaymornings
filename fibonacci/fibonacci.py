@@ -1,5 +1,5 @@
 def fibonacci(number):
-    """Return n'th element of Fibonacci sequence
+    """Return the Fibonacci sequence up to the nth element
     >>> fibonacci(1)
     [1]
     >>> fibonacci(2)

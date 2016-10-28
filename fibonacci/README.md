@@ -1,6 +1,6 @@
 # Fibonacci
 
-Function that returns n'th element of Fibonacci sequence.
+Create a function that returns the Fibonacci sequence up to the nth element.
 
 ```
 >>> fibonacci(10)
