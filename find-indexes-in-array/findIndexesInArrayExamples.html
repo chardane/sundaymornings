@@ -1,0 +1,59 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<script>
+
+// *******************************
+// Initialize Array
+var multipleItems = [1,2,3,2,3,4,5,4,4,4];
+
+// Display index and value in browser for reference
+for (var i = 0; i < multipleItems.length; i++){
+	document.write("Index: " + i + " = " + multipleItems[i] + "<br>") ;
+}
+
+// Assign the number we want to find all positions for to variable
+var itemNumber = 4;
+
+document.write("<br> Find index positions of " + itemNumber + " <br><br>");
+
+
+// *******************************
+
+// *******************************
+// Loop through and document.write when match is found
+document.write("Loop through using for and print out index when match found. <br>");
+for (var i = 0; i < multipleItems.length; i++){
+	if (multipleItems[i] === itemNumber) {
+			document.write(i + " ");
+	}
+}
+// *******************************
+
+// *******************************
+// Loop through, load into array, then document.write the array
+document.write("<br><br> Loop through using for, load into array, then display. <br>");
+
+var itemIndexes = [];
+var itemIndexCounter=0;
+for (var i = 0; i < multipleItems.length; i++){
+	if (multipleItems[i] === itemNumber) {
+			itemIndexes[itemIndexCounter]=i;
+			itemIndexCounter++;
+	}
+}
+
+// display array
+document.write(itemIndexes);
+// *******************************
+
+
+
+
+</script>
+
+
+</body>
