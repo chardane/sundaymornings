@@ -2,7 +2,7 @@
 
 FizzBuzz is a computer science classic and a fun interview-style question.
 
-As this is a JavaScript implementation, we'll be using JS terminology throughout.
+This folder provides a JavaScript implementation, in which we'll be using JS terminology throughout, as well as a Golang implementation.
 
 Given an array of integers, iterate through the array and log the following values:
 * 'fizz' if the integer is a multiple of 3, but NOT 5
